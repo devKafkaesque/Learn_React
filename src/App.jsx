@@ -24,13 +24,17 @@ function App() {
             <Core_concepts {...CORE_CONCEPTS[3]} />
           </ul>
         </section>
-        <section id="tab-content">
+        <section id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton onClick={() => handleClick("Components")}>
               Components
             </TabButton>
+            <TabButton onClick={() => handleClick("JSX")}>JSX</TabButton>
+            <TabButton onClick={() => handleClick("Props")}>Props</TabButton>
+            <TabButton onClick={() => handleClick("State")}>State</TabButton>
           </menu>
+          {state}
         </section>
       </main>
     </div>

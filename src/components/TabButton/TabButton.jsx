@@ -1,7 +1,7 @@
-export default function TabButton(aha, children) {
+export default function TabButton({ onClick, children }) {
   return (
     <li>
-      <button onClick={aha}>{children}</button>
+      <button onClick={onClick}>{children}</button>
     </li>
   );
 }
